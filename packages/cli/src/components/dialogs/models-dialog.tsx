@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { useDialog } from "../../providers/dialog";
 import { DialogSearchList } from "../dialog-search-list";
-import { Mode } from "@codewright/database/enums";
 import type { SupportedChatModelId } from "@codewright/shared";
 
 type ModelsDialogContentProps = {
