@@ -12,9 +12,9 @@ import {
   toolCallArgsSchema,
   messagePartsSchema,
 } from "@codewright/shared";
-import { createTools } from "../tools";
-import { buildSystemPrompt } from "../system-prompt";
-import { isSupportedChatModel, resolveChatModel } from "../lib/models";
+import { createTools } from "../tools/index.ts";
+import { buildSystemPrompt } from "../system-prompt.ts";
+import { isSupportedChatModel, resolveChatModel } from "../lib/models.ts";
 
 const submitSchema = z.object({
   content: z.string(),
