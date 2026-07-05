@@ -6,8 +6,9 @@ import {
   type SupportedChatModelId,
   type SupportedProvider,
 } from "@codewright/shared";
-import type { ProviderOptions } from "@ai-sdk/provider-utils";
-import type { LanguageModel } from "ai";
+import type { LanguageModel, streamText } from "ai";
+
+type ProviderOptions = NonNullable<Parameters<typeof streamText>[0]["providerOptions"]>;
 
 type AnthropicModelId = Extract<SupportedChatModel, { provider: "anthropic" }>["id"];
 type OpenAIModelId = Extract<SupportedChatModel, { provider: "openai" }>["id"];

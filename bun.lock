@@ -25,6 +25,7 @@
         "@codewright/server": "workspace:*",
         "@types/bun": "latest",
         "@types/react": "^19.2.17",
+        "bun-types": "latest",
       },
       "peerDependencies": {
         "typescript": "^5",
@@ -56,6 +57,10 @@
         "dotenv": "^17.4.2",
         "hono": "^4.12.26",
         "zod": "^4.4.3",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+        "bun-types": "latest",
       },
     },
     "packages/shared": {

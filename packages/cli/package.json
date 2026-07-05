@@ -9,7 +9,8 @@
   "devDependencies": {
     "@codewright/server": "workspace:*",
     "@types/bun": "latest",
-    "@types/react": "^19.2.17"
+    "@types/react": "^19.2.17",
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
